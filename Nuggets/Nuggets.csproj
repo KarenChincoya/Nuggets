@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A8B2822-7D4C-428E-BAA6-CFBC32BF8CF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nuggets</RootNamespace>
+    <AssemblyName>Nuggets</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.5.1\lib\net45\Google.Protobuf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.13\lib\net452\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BDCon.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="DAOCard.cs" />
+    <Compile Include="DAORepository.cs" />
+    <Compile Include="DAOUser.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlAdmin.Designer.cs">
+      <DependentUpon>PnlAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlCreateCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlCreateCard.Designer.cs">
+      <DependentUpon>PnlCreateCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlCreateRepository.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlCreateRepository.Designer.cs">
+      <DependentUpon>PnlCreateRepository.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlCreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlCreateUser.Designer.cs">
+      <DependentUpon>PnlCreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlDeleteRepository.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlDeleteRepository.Designer.cs">
+      <DependentUpon>PnlDeleteRepository.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlDeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlDeleteUser.Designer.cs">
+      <DependentUpon>PnlDeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlReadRepository.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlReadRepository.Designer.cs">
+      <DependentUpon>PnlReadRepository.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlReadRepository1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlReadRepository1.Designer.cs">
+      <DependentUpon>PnlReadRepository1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlReadUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlReadUser.Designer.cs">
+      <DependentUpon>PnlReadUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlReadUser1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlReadUser1.Designer.cs">
+      <DependentUpon>PnlReadUser1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlUpdateRepository.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlUpdateRepository.Designer.cs">
+      <DependentUpon>PnlUpdateRepository.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlUpdateRepository1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlUpdateRepository1.Designer.cs">
+      <DependentUpon>PnlUpdateRepository1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlUpdateUser.Designer.cs">
+      <DependentUpon>PnlUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlUpdateUser1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlUpdateUser1.Designer.cs">
+      <DependentUpon>PnlUpdateUser1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlUser.Designer.cs">
+      <DependentUpon>PnlUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlAdmin.resx">
+      <DependentUpon>PnlAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlCreateCard.resx">
+      <DependentUpon>PnlCreateCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlCreateRepository.resx">
+      <DependentUpon>PnlCreateRepository.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlCreateUser.resx">
+      <DependentUpon>PnlCreateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlDeleteRepository.resx">
+      <DependentUpon>PnlDeleteRepository.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlDeleteUser.resx">
+      <DependentUpon>PnlDeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlReadRepository.resx">
+      <DependentUpon>PnlReadRepository.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlReadRepository1.resx">
+      <DependentUpon>PnlReadRepository1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlReadUser.resx">
+      <DependentUpon>PnlReadUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlReadUser1.resx">
+      <DependentUpon>PnlReadUser1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlUpdateRepository.resx">
+      <DependentUpon>PnlUpdateRepository.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlUpdateRepository1.resx">
+      <DependentUpon>PnlUpdateRepository1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlUpdateUser.resx">
+      <DependentUpon>PnlUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlUpdateUser1.resx">
+      <DependentUpon>PnlUpdateUser1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlUser.resx">
+      <DependentUpon>PnlUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
