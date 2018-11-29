@@ -12,6 +12,12 @@ namespace Nuggets
 {
     public partial class PnlCreateUser : Form
     {
+        public User user { get; set; }
+        public void updateUserId(int id)
+        {
+            txtId.Text = id.ToString();
+            txtId.Enabled = false;
+        }
         public PnlCreateUser()
         {
             InitializeComponent();

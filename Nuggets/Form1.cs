@@ -20,13 +20,14 @@ namespace Nuggets
         private void button2_Click(object sender, EventArgs e)
         {
             PnlCreateUser pnl = new PnlCreateUser();
+            int id = DAOUser.getLastId();
+            pnl.updateUserId(id+1);
             pnl.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("Image location: "+pictureBox1.ImageLocation);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

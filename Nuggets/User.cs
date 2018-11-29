@@ -9,16 +9,16 @@ namespace Nuggets
     public class User
     {
         public int id { get; set; }
-        public String password { get; set; }
-        public String name { get; set; }
-        public String lastName { get; set; }
-        public String fb { get; set; }
-        public String email { get; set; }
-        public String tel { get; set; }
+        public string password { get; set; }
+        public string name { get; set; }
+        public string lastName { get; set; }
+        public string fb { get; set; }
+        public string email { get; set; }
+        public string tel { get; set; }
         public Card card { get; set; }
-        public String nickname { get; set; }
+        public string nickname { get; set; }
 
-        public User(int id, String password, String name, String lastName, String fb, String email, String nickname, String tel, Card card)
+        public User(int id, string password, string name, string lastName, string fb, string email, string nickname, string tel, Card card)
         {
             this.id = id;
             this.password = password;
@@ -28,8 +28,9 @@ namespace Nuggets
             this.email = email;
             this.tel = tel;
             this.card = card;
+            this.nickname = nickname;
         }
-        public User(int id, String password, String name, String lastName, String fb, String email, String tel, String nickname)
+        public User(int id, string password, string name, string lastName, string fb, string email, string tel, string nickname)
         {
             this.id = id;
             this.password = password;
@@ -38,8 +39,9 @@ namespace Nuggets
             this.fb = fb;
             this.email = email;
             this.tel = tel;
+            this.nickname = nickname;
         }
-        public User(String password, String name, String lastName, String fb, String email, String tel, String nickname)
+        public User(string password, string name, string lastName, string fb, string email, string tel, string nickname)
         {
             this.id = id;
             this.password = password;
@@ -48,12 +50,13 @@ namespace Nuggets
             this.fb = fb;
             this.email = email;
             this.tel = tel;
+            this.nickname = nickname;
         }
         public User()
         {
 
         }
-        public User(String password, String name, String lastName, String fb, String email, String tel, Card card, String nickname)
+        public User(string password, string name, string lastName, string fb, string email, string tel, Card card, string nickname)
         {
             this.password = password;
             this.name = name;
@@ -62,6 +65,7 @@ namespace Nuggets
             this.email = email;
             this.tel = tel;
             this.card = card;
+            this.nickname = nickname;
         }
     }
 }

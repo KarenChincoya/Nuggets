@@ -14,7 +14,7 @@ namespace Nuggets
 
             int result = 0;
 
-            MySqlCommand command = new MySqlCommand(string.Format("Insert into user(password, name, lastname, fb, email, tel) values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}')", u.password, u.name, u.lastName, u.fb, u.email, u.tel), BDCon.ObtenerConexion());
+            MySqlCommand command = new MySqlCommand(string.Format("Insert into user(password, name, lastname, fb, email, tel, nickname) values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}')", u.password, u.name, u.lastName, u.fb, u.email, u.tel, u.nickname), BDCon.ObtenerConexion());
             result = command.ExecuteNonQuery();
 
             return result;
@@ -72,9 +72,11 @@ namespace Nuggets
             return retorno;
         }
 
-        public int getLastId()
+        public static int getLastId()
         {
             int result = 0;
+            MySqlCommand c = new MySqlCommand(string.Format("select count(*) from user"), BDCon.ObtenerConexion());
+            result = int.Parse(c.ExecuteScalar().ToString());
             
             return result;
         }

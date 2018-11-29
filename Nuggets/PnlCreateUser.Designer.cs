@@ -38,7 +38,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.txtNickname = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtTel = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.txtNickname = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button2
@@ -145,14 +145,6 @@
             this.txtName.Size = new System.Drawing.Size(204, 32);
             this.txtName.TabIndex = 15;
             // 
-            // txtNickname
-            // 
-            this.txtNickname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNickname.Location = new System.Drawing.Point(219, 376);
-            this.txtNickname.Name = "txtNickname";
-            this.txtNickname.Size = new System.Drawing.Size(204, 32);
-            this.txtNickname.TabIndex = 26;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -227,14 +219,22 @@
             this.label8.TabIndex = 27;
             this.label8.Text = "Información general";
             // 
+            // txtNickname
+            // 
+            this.txtNickname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNickname.Location = new System.Drawing.Point(219, 373);
+            this.txtNickname.Name = "txtNickname";
+            this.txtNickname.Size = new System.Drawing.Size(204, 32);
+            this.txtNickname.TabIndex = 28;
+            // 
             // PnlCreateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(575, 548);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.txtNickname);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTel);
@@ -272,7 +272,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox txtNickname;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtTel;
@@ -281,5 +280,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtNickname;
     }
 }
