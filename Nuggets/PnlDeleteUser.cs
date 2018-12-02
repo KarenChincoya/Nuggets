@@ -12,6 +12,8 @@ namespace Nuggets
 {
     public partial class PnlDeleteUser : Form
     {
+        public User user { get; set; }
+        public PnlUser pnlPadre { get; set; }
         public PnlDeleteUser()
         {
             InitializeComponent();
@@ -19,25 +21,26 @@ namespace Nuggets
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            form.Show();
+            pnlPadre.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(txtUser.Text);
-
+            //            int id = int.Parse(txtUser.Text);
+            int id = user.id;
             int result = DAOUser.delete(id);
 
             if (result > 0)
             {
-                MessageBox.Show("Usuario guardado con éxito.", "Usuario registrado.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Usuario eliminado con éxito.", "Usuario registrado.", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                MessageBox.Show("No se pudo realizar el registro", "Fallo al ingresar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("No se pudo eliminar el registro", "Error de eliminación.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            pnlPadre.Show();
+            this.Hide();
         }
     }
 }

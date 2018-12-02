@@ -26,3 +26,10 @@ C:\Users\Karen Velasco\Desktop\Quinto semestre\Visual3\Nuggets\Nuggets\obj\Debug
 C:\Users\Karen Velasco\Desktop\Quinto semestre\Visual3\Nuggets\Nuggets\obj\Debug\Nuggets.PnlReadRepository1.resources
 C:\Users\Karen Velasco\Desktop\Quinto semestre\Visual3\Nuggets\Nuggets\obj\Debug\Nuggets.PnlUpdateRepository.resources
 C:\Users\Karen Velasco\Desktop\Quinto semestre\Visual3\Nuggets\Nuggets\obj\Debug\Nuggets.PnlUpdateRepository1.resources
+C:\Users\Karen Velasco\Desktop\Quinto semestre\Visual3\Nuggets\Nuggets\obj\Debug\Nuggets.PnlUpdateCard.resources
+C:\Users\Karen Velasco\Desktop\Quinto semestre\Visual3\Nuggets\Nuggets\obj\Debug\Nuggets.PnlUpdateCard1.resources
+C:\Users\Karen Velasco\Desktop\Quinto semestre\Visual3\Nuggets\Nuggets\obj\Debug\Nuggets.PnlDeleteCard.resources
+C:\Users\Karen Velasco\Desktop\Quinto semestre\Visual3\Nuggets\Nuggets\obj\Debug\Nuggets.PnlReadCards.resources
+C:\Users\Karen Velasco\Desktop\Quinto semestre\Visual3\Nuggets\Nuggets\obj\Debug\Nuggets.PnlReadMyCreatedRepositories.resources
+C:\Users\Karen Velasco\Desktop\Quinto semestre\Visual3\Nuggets\Nuggets\obj\Debug\Nuggets.PnlReadCatalogo.resources
+C:\Users\Karen Velasco\Desktop\Quinto semestre\Visual3\Nuggets\Nuggets\obj\Debug\Nuggets.PnlReadMyPurchases.resources

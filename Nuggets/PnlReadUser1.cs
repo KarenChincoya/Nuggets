@@ -13,7 +13,7 @@ namespace Nuggets
     public partial class PnlReadUser1 : Form
     {
         public User user { get; set; }
-
+        public PnlUser pnlPadre = new PnlUser();
         public void updateData()
         {
             txtID.Text = user.id.ToString();
@@ -32,8 +32,7 @@ namespace Nuggets
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 pnl = new Nuggets.Form1();
-            pnl.Show();
+            pnlPadre.Show();            
             this.Hide();
         }
     }

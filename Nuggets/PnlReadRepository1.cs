@@ -12,12 +12,24 @@ namespace Nuggets
 {
     public partial class PnlReadRepository1 : Form
     {
+        public PnlUser pnlPadre { get; set; }
+        public User user { get; set; }
         public Repository repo { get; set; }
-        public void update()
+        public void updateData()
         {
             txtID.Text = repo.id.ToString();
             txtAutor.Text = repo.id_creator.ToString();
-            txtDescripción.Text = repo.description;           
+            txtNombre.Text = repo.name;
+            txtDescripción.Text = repo.description;
+
+            string p1 = repo.picture1.Trim();
+            string p2 = repo.picture2.Trim();
+            string p3 = repo.picture3.Trim();
+
+            //Las imagenes deben estar en la carpeta bin 
+            picture1.Image = Image.FromFile(p1);
+            picture2.Image = Image.FromFile(p2);
+            picture3.Image = Image.FromFile(p3);    
         }
         public PnlReadRepository1()
         {
@@ -26,8 +38,7 @@ namespace Nuggets
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 pnl = new Nuggets.Form1();
-            pnl.Show();
+            pnlPadre.Show();
             this.Hide();
         }
     }

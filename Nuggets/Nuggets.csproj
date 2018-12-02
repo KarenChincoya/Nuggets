@@ -63,7 +63,9 @@
   <ItemGroup>
     <Compile Include="BDCon.cs" />
     <Compile Include="Card.cs" />
+    <Compile Include="Compra.cs" />
     <Compile Include="DAOCard.cs" />
+    <Compile Include="DAOCompras.cs" />
     <Compile Include="DAORepository.cs" />
     <Compile Include="DAOUser.cs" />
     <Compile Include="Form1.cs">
@@ -77,6 +79,12 @@
     </Compile>
     <Compile Include="PnlAdmin.Designer.cs">
       <DependentUpon>PnlAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlReadCatalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlReadCatalogo.Designer.cs">
+      <DependentUpon>PnlReadCatalogo.cs</DependentUpon>
     </Compile>
     <Compile Include="PnlCreateCard.cs">
       <SubType>Form</SubType>
@@ -96,6 +104,12 @@
     <Compile Include="PnlCreateUser.Designer.cs">
       <DependentUpon>PnlCreateUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="PnlDeleteCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlDeleteCard.Designer.cs">
+      <DependentUpon>PnlDeleteCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="PnlDeleteRepository.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +121,24 @@
     </Compile>
     <Compile Include="PnlDeleteUser.Designer.cs">
       <DependentUpon>PnlDeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlReadMyCreatedRepositories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlReadMyCreatedRepositories.Designer.cs">
+      <DependentUpon>PnlReadMyCreatedRepositories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlReadCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlReadCards.Designer.cs">
+      <DependentUpon>PnlReadCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlReadMyPurchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlReadMyPurchases.Designer.cs">
+      <DependentUpon>PnlReadMyPurchases.cs</DependentUpon>
     </Compile>
     <Compile Include="PnlReadRepository.cs">
       <SubType>Form</SubType>
@@ -131,6 +163,18 @@
     </Compile>
     <Compile Include="PnlReadUser1.Designer.cs">
       <DependentUpon>PnlReadUser1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlUpdateCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlUpdateCard.Designer.cs">
+      <DependentUpon>PnlUpdateCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PnlUpdateCard1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PnlUpdateCard1.Designer.cs">
+      <DependentUpon>PnlUpdateCard1.cs</DependentUpon>
     </Compile>
     <Compile Include="PnlUpdateRepository.cs">
       <SubType>Form</SubType>
@@ -172,6 +216,9 @@
     <EmbeddedResource Include="PnlAdmin.resx">
       <DependentUpon>PnlAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PnlReadCatalogo.resx">
+      <DependentUpon>PnlReadCatalogo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PnlCreateCard.resx">
       <DependentUpon>PnlCreateCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,11 +228,23 @@
     <EmbeddedResource Include="PnlCreateUser.resx">
       <DependentUpon>PnlCreateUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PnlDeleteCard.resx">
+      <DependentUpon>PnlDeleteCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PnlDeleteRepository.resx">
       <DependentUpon>PnlDeleteRepository.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PnlDeleteUser.resx">
       <DependentUpon>PnlDeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlReadMyCreatedRepositories.resx">
+      <DependentUpon>PnlReadMyCreatedRepositories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlReadCards.resx">
+      <DependentUpon>PnlReadCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlReadMyPurchases.resx">
+      <DependentUpon>PnlReadMyPurchases.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PnlReadRepository.resx">
       <DependentUpon>PnlReadRepository.cs</DependentUpon>
@@ -198,6 +257,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PnlReadUser1.resx">
       <DependentUpon>PnlReadUser1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlUpdateCard.resx">
+      <DependentUpon>PnlUpdateCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PnlUpdateCard1.resx">
+      <DependentUpon>PnlUpdateCard1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PnlUpdateRepository.resx">
       <DependentUpon>PnlUpdateRepository.cs</DependentUpon>

@@ -12,21 +12,29 @@ namespace Nuggets
 {
     public partial class PnlCreateRepository : Form
     {
+        public User user { get; set; }
+        public PnlUser pnlPadre { get; set; }
         public PnlCreateRepository()
         {
             InitializeComponent();
         }
 
+        public void updateData(int id)
+        {
+            this.txtID.Text = id.ToString();
+            this.txtAutor.Text = user.id.ToString();
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            form.Show();
+            pnlPadre.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int creator_id = int.Parse(txtAutor.Text);
+            //listener para creacion
+            int creator_id = user.id;
             string name = txtNombre.Text;
             string descripcion = txtDescripción.Text;
             string picture1 = txtPicture1.Text;
@@ -41,6 +49,8 @@ namespace Nuggets
             if (result > 0)
             {
                 MessageBox.Show("Repositorio agregado.", "Usuario registrado.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                pnlPadre.Show();
+                this.Hide();
             }
             else
             {

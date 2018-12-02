@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picture1 = new System.Windows.Forms.PictureBox();
             this.Usuario = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,23 +39,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDescripción = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtPicture2 = new System.Windows.Forms.TextBox();
             this.txtPicture3 = new System.Windows.Forms.TextBox();
             this.txtPicture1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picture1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picture1
-            // 
-            this.picture1.Location = new System.Drawing.Point(219, 283);
-            this.picture1.Name = "picture1";
-            this.picture1.Size = new System.Drawing.Size(134, 105);
-            this.picture1.TabIndex = 0;
-            this.picture1.TabStop = false;
             // 
             // Usuario
             // 
@@ -73,6 +59,7 @@
             this.txtID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Location = new System.Drawing.Point(219, 33);
             this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(204, 32);
             this.txtID.TabIndex = 24;
             // 
@@ -80,7 +67,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(255, 418);
+            this.button1.Location = new System.Drawing.Point(229, 322);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(194, 44);
             this.button1.TabIndex = 23;
@@ -92,7 +79,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.LightCoral;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(492, 418);
+            this.button2.Location = new System.Drawing.Point(483, 322);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(190, 44);
             this.button2.TabIndex = 22;
@@ -115,6 +102,7 @@
             this.txtAutor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAutor.Location = new System.Drawing.Point(219, 87);
             this.txtAutor.Name = "txtAutor";
+            this.txtAutor.ReadOnly = true;
             this.txtAutor.Size = new System.Drawing.Size(204, 32);
             this.txtAutor.TabIndex = 28;
             // 
@@ -164,22 +152,6 @@
             this.txtDescripción.Size = new System.Drawing.Size(463, 32);
             this.txtDescripción.TabIndex = 33;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(388, 283);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 105);
-            this.pictureBox1.TabIndex = 34;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(548, 283);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(134, 105);
-            this.pictureBox2.TabIndex = 35;
-            this.pictureBox2.TabStop = false;
-            // 
             // txtPicture2
             // 
             this.txtPicture2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -209,12 +181,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(748, 492);
+            this.ClientSize = new System.Drawing.Size(748, 404);
             this.Controls.Add(this.txtPicture1);
             this.Controls.Add(this.txtPicture3);
             this.Controls.Add(this.txtPicture2);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtDescripción);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
@@ -226,20 +196,14 @@
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.picture1);
             this.Name = "PnlCreateRepository";
             this.Text = "PnlCreateRepository";
-            ((System.ComponentModel.ISupportInitialize)(this.picture1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox picture1;
         private System.Windows.Forms.Label Usuario;
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Button button1;
@@ -251,8 +215,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDescripción;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox txtPicture2;
         private System.Windows.Forms.TextBox txtPicture3;
         private System.Windows.Forms.TextBox txtPicture1;

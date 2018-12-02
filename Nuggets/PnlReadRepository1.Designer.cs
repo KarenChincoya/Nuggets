@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PnlReadRepository1));
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picture3 = new System.Windows.Forms.PictureBox();
+            this.picture2 = new System.Windows.Forms.PictureBox();
             this.txtDescripción = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -45,36 +45,37 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox2
+            // picture3
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(577, 232);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(184, 178);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 66;
-            this.pictureBox2.TabStop = false;
+            this.picture3.Image = ((System.Drawing.Image)(resources.GetObject("picture3.Image")));
+            this.picture3.Location = new System.Drawing.Point(577, 232);
+            this.picture3.Name = "picture3";
+            this.picture3.Size = new System.Drawing.Size(184, 178);
+            this.picture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture3.TabIndex = 66;
+            this.picture3.TabStop = false;
             // 
-            // pictureBox1
+            // picture2
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(376, 232);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 178);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 65;
-            this.pictureBox1.TabStop = false;
+            this.picture2.Image = ((System.Drawing.Image)(resources.GetObject("picture2.Image")));
+            this.picture2.Location = new System.Drawing.Point(376, 232);
+            this.picture2.Name = "picture2";
+            this.picture2.Size = new System.Drawing.Size(184, 178);
+            this.picture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture2.TabIndex = 65;
+            this.picture2.TabStop = false;
             // 
             // txtDescripción
             // 
             this.txtDescripción.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripción.Location = new System.Drawing.Point(196, 174);
             this.txtDescripción.Name = "txtDescripción";
+            this.txtDescripción.ReadOnly = true;
             this.txtDescripción.Size = new System.Drawing.Size(463, 32);
             this.txtDescripción.TabIndex = 64;
             // 
@@ -103,6 +104,7 @@
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(196, 124);
             this.txtNombre.Name = "txtNombre";
+            this.txtNombre.ReadOnly = true;
             this.txtNombre.Size = new System.Drawing.Size(204, 32);
             this.txtNombre.TabIndex = 61;
             // 
@@ -121,6 +123,7 @@
             this.txtAutor.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAutor.Location = new System.Drawing.Point(196, 75);
             this.txtAutor.Name = "txtAutor";
+            this.txtAutor.ReadOnly = true;
             this.txtAutor.Size = new System.Drawing.Size(204, 32);
             this.txtAutor.TabIndex = 59;
             // 
@@ -149,6 +152,7 @@
             this.txtID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Location = new System.Drawing.Point(196, 21);
             this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
             this.txtID.Size = new System.Drawing.Size(204, 32);
             this.txtID.TabIndex = 56;
             // 
@@ -192,8 +196,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(803, 508);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picture3);
+            this.Controls.Add(this.picture2);
             this.Controls.Add(this.txtDescripción);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
@@ -207,8 +211,8 @@
             this.Controls.Add(this.picture1);
             this.Name = "PnlReadRepository1";
             this.Text = "PnlReadRepository1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -217,8 +221,8 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picture3;
+        private System.Windows.Forms.PictureBox picture2;
         private System.Windows.Forms.TextBox txtDescripción;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;

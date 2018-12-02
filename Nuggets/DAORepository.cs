@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -55,5 +56,59 @@ namespace Nuggets
 
             return retorno;
         }
+
+        public static ArrayList readMyCreatedRepos(int user_id)
+        {
+            ArrayList repos = new ArrayList();
+
+            string query = "select * from repository where creator_id='" + user_id + "'";
+
+            MySqlCommand command = new MySqlCommand(query, BDCon.ObtenerConexion());
+            MySqlDataReader r = command.ExecuteReader();
+
+            while (r.Read())
+            {
+                Repository repo = new Repository(int.Parse(r["repository_id"].ToString()), int.Parse(r["creator_id"].ToString()), r["name"].ToString(), r["description"].ToString(), r["picture1"].ToString(), r["picture2"].ToString(), r["picture3"].ToString());
+                repos.Add(repo);
+            }
+            return repos;
+        }
+
+        //Todos
+        public static ArrayList readAllRepos()
+        {
+            ArrayList repos = new ArrayList();
+
+            string query = "select * from repository";
+
+            MySqlCommand command = new MySqlCommand(query, BDCon.ObtenerConexion());
+            MySqlDataReader r = command.ExecuteReader();
+
+            while (r.Read())
+            {
+                Repository repo = new Repository(int.Parse(r["repository_id"].ToString()), int.Parse(r["creator_id"].ToString()), r["name"].ToString(), r["description"].ToString(), r["picture1"].ToString(), r["picture2"].ToString(), r["picture3"].ToString());
+                repos.Add(repo);
+            }
+            return repos;
+        }
+
+        public static int getMaxId()
+        {
+            int result = 0;
+            MySqlCommand c = new MySqlCommand(string.Format("select MAX(repository_id) from repository"), BDCon.ObtenerConexion());
+            result = int.Parse(c.ExecuteScalar().ToString());
+
+            return result;
+        }
+
+        public static int getCountAll()
+        {
+            int result = 0;
+            MySqlCommand c = new MySqlCommand(string.Format("select count(*) from repository"), BDCon.ObtenerConexion());
+            result = int.Parse(c.ExecuteScalar().ToString());
+
+            return result;
+        }
+
     }
 }

@@ -47,13 +47,15 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtNickname = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtPwd2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.LightCoral;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(285, 455);
+            this.button2.Location = new System.Drawing.Point(420, 506);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(190, 44);
             this.button2.TabIndex = 9;
@@ -64,16 +66,17 @@
             // txtPwd
             // 
             this.txtPwd.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPwd.Location = new System.Drawing.Point(219, 121);
+            this.txtPwd.Location = new System.Drawing.Point(360, 121);
             this.txtPwd.Name = "txtPwd";
-            this.txtPwd.Size = new System.Drawing.Size(204, 32);
+            this.txtPwd.PasswordChar = '*';
+            this.txtPwd.Size = new System.Drawing.Size(263, 32);
             this.txtPwd.TabIndex = 14;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(54, 455);
+            this.button1.Location = new System.Drawing.Point(189, 506);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(194, 44);
             this.button1.TabIndex = 13;
@@ -104,24 +107,24 @@
             // txtId
             // 
             this.txtId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(219, 76);
+            this.txtId.Location = new System.Drawing.Point(360, 70);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(204, 32);
+            this.txtId.Size = new System.Drawing.Size(263, 32);
             this.txtId.TabIndex = 10;
             // 
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(219, 204);
+            this.txtLastName.Location = new System.Drawing.Point(360, 252);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(204, 32);
+            this.txtLastName.Size = new System.Drawing.Size(263, 32);
             this.txtLastName.TabIndex = 18;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 204);
+            this.label1.Location = new System.Drawing.Point(77, 255);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 23);
             this.label1.TabIndex = 17;
@@ -131,7 +134,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(77, 162);
+            this.label3.Location = new System.Drawing.Point(77, 213);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 23);
             this.label3.TabIndex = 16;
@@ -140,16 +143,16 @@
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(219, 159);
+            this.txtName.Location = new System.Drawing.Point(360, 210);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(204, 32);
+            this.txtName.Size = new System.Drawing.Size(263, 32);
             this.txtName.TabIndex = 15;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(77, 376);
+            this.label4.Location = new System.Drawing.Point(77, 427);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 23);
             this.label4.TabIndex = 25;
@@ -159,7 +162,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(77, 334);
+            this.label5.Location = new System.Drawing.Point(77, 385);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 23);
             this.label5.TabIndex = 24;
@@ -168,24 +171,24 @@
             // txtTel
             // 
             this.txtTel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTel.Location = new System.Drawing.Point(219, 331);
+            this.txtTel.Location = new System.Drawing.Point(360, 376);
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(204, 32);
+            this.txtTel.Size = new System.Drawing.Size(263, 32);
             this.txtTel.TabIndex = 23;
             // 
             // txtFb
             // 
             this.txtFb.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFb.Location = new System.Drawing.Point(219, 293);
+            this.txtFb.Location = new System.Drawing.Point(360, 335);
             this.txtFb.Name = "txtFb";
-            this.txtFb.Size = new System.Drawing.Size(204, 32);
+            this.txtFb.Size = new System.Drawing.Size(263, 32);
             this.txtFb.TabIndex = 22;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(77, 293);
+            this.label6.Location = new System.Drawing.Point(77, 344);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 23);
             this.label6.TabIndex = 21;
@@ -195,7 +198,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(77, 251);
+            this.label7.Location = new System.Drawing.Point(77, 302);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 23);
             this.label7.TabIndex = 20;
@@ -204,9 +207,9 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(219, 248);
+            this.txtEmail.Location = new System.Drawing.Point(360, 293);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(204, 32);
+            this.txtEmail.Size = new System.Drawing.Size(263, 32);
             this.txtEmail.TabIndex = 19;
             // 
             // label8
@@ -222,17 +225,38 @@
             // txtNickname
             // 
             this.txtNickname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNickname.Location = new System.Drawing.Point(219, 373);
+            this.txtNickname.Location = new System.Drawing.Point(360, 424);
             this.txtNickname.Name = "txtNickname";
-            this.txtNickname.Size = new System.Drawing.Size(204, 32);
+            this.txtNickname.Size = new System.Drawing.Size(263, 32);
             this.txtNickname.TabIndex = 28;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(77, 170);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(223, 23);
+            this.label9.TabIndex = 29;
+            this.label9.Text = "Confirmar contraseña";
+            // 
+            // txtPwd2
+            // 
+            this.txtPwd2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPwd2.Location = new System.Drawing.Point(360, 167);
+            this.txtPwd2.Name = "txtPwd2";
+            this.txtPwd2.PasswordChar = '*';
+            this.txtPwd2.Size = new System.Drawing.Size(263, 32);
+            this.txtPwd2.TabIndex = 30;
             // 
             // PnlCreateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(575, 548);
+            this.ClientSize = new System.Drawing.Size(659, 575);
+            this.Controls.Add(this.txtPwd2);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.txtNickname);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label4);
@@ -281,5 +305,7 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtNickname;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtPwd2;
     }
 }
